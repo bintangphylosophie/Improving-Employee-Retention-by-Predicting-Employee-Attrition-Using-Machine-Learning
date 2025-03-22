@@ -154,7 +154,6 @@ I create the column StatusKerja to serve as our label by defining 'Tidak Bekerja
 - Tanggal hiring
 - Lama menjabat
 
-
 <br>
 <br>
 
@@ -165,8 +164,7 @@ I create the column StatusKerja to serve as our label by defining 'Tidak Bekerja
 <img src="https://media0.giphy.com/media/Y4PkFXkfTeEKqGBBsC/giphy.gif?cid=ecf05e47numetagrmbl2rxf6x0lpcjgq1s340dfdh1oi0x9w&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="420">
 </p>
 
-This is the next of the project, focusing on gaining insight 
-<table>
+This is the next phase of the project, focusing on gaining insights. Here are some valuable insights derived from the dataset<table>
   <tr>
     <td><img src="https://github.com/user-attachments/assets/8a3562f1-4f19-489a-a2cf-c6d5ec13162d" width="300"></td>
     <td><img src="https://github.com/user-attachments/assets/e2592858-5f2c-44c4-a7f7-616c98959fbc" width="300"></td>
@@ -175,19 +173,42 @@ This is the next of the project, focusing on gaining insight
     <td><img src="https://github.com/user-attachments/assets/c670b3e3-3530-4e59-8767-da16c0d851ab" width="300"></td>
     <td><img src="https://github.com/user-attachments/assets/ba8274cd-a33e-45fc-b108-b3a93962ca26" width="300"></td>
   </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/a3d3fdd9-be1d-4442-affd-38f5baa5e7d5" width="300"></td>
+    <td><img src="https://github.com/user-attachments/assets/a95ba87f-b09d-4556-b8d2-3e65f8364202" width="300"></td>
+  </tr>
 </table>
 
 
+# ⚙️ Stage 4: Data Preprocessing
+This stage is focusing on data preprocessing of the dataset transform the data to make it suitable for modeling
+## 1. **Feature Encoding** 🏷️<br>
+We encode all of our categorical features (strings) using the label encoding method. All features have been encoded at the feature extraction stage, given that our features are ordinal data and the majority of machine learning algorithms perform better with numerical data.
+
+## 2. **Data Scaling** 🏷️<br>
+Data scaling is the process of transforming feature values within a dataset to ensure they have a uniform range. We performed using StandardScaler to improve machine learning algorithm performance that will be perform in next stage.
+
+## 3. **Feature Selection** 🎯<br>
+Since we are working with categorical features and a classification problem, SelectKBest with chi2 is a great choice because it is: fast, helps remove irrelevant features, works well with encoded categorical data. This method is commonly used to reduce dimensionality by keeping only the most relevant features for predictive modeling. We only keep top 15 features.
+
+## 4. **Data Splitting**<br>
+Data splitting is the process of dividing a dataset into different subsets to train, validate, and test a machine learning model. 
+The main goal of this stage is to build and evaluate models that can predict the target variable based on the preprocessed data. The data splitted into 20% train and 80% test.
 
 
-
-
-
-
-
-the modelling of the  dataset. The main goal of this stage is to build and evaluate models that can predict the target variable based on the preprocessed data. 🎯
-
+## Prior to this, the dataset was split into training and testing sets. After completing all preprocessing steps, the data is clean and ready for machine learning to predict the target.🤖
 The `Modelling_Merged.ipynb` notebook contains the modelling steps, where we build, train, and evaluate various machine learning models. This stage is crucial for finding the best model that can accurately predict the target variable. 📊
+
+<br>
+<br>
+
+
+# 🚀 Stage 3: Modelling
+<br>
+<p align="center">
+<img src="https://media0.giphy.com/media/Y4PkFXkfTeEKqGBBsC/giphy.gif?cid=ecf05e47numetagrmbl2rxf6x0lpcjgq1s340dfdh1oi0x9w&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="420">
+</p>
+The main goal of this stage is to build and evaluate models that can predict the target variable based on the preprocessed data. 🎯
 
 ## 📚 Installation
 
@@ -223,64 +244,41 @@ jupyter notebook Modelling_Merged.ipynb
 
 ## 1. **Models**: 🏗️<br>
 
-Based on various studies, the models commonly used in calorie prediction include tree-based methods such as Random Forest and XGBoost, as well as linear models such as Linear Regression and Ridge Regression.
-- Nipas et al. (2022) utilized Random Forest, Linear Regression, and Ridge Regression in their research.
-- Reddy et al. (2023) also employed Linear Regression, Ridge Regression, and Random Forest Regression.
-- Aziz et al. (2023) explored XGBoost, Linear Regression, SVM, and Random Forest, with the best results achieved using tree-based methods.
-
-However, when our team tested the algorithm, we encountered a problem with overfitting. As a result, we experimented with other algorithms. A total of 13 algorithms were tested during the experiment, including:
-- **Random Forest**
-- **Linear Regression**
-- **Ridge**
-- **Lasso**
-- **Elastic Net**
-- **Decision Tree**
-- **XGBoost**
+I experimented with other algorithms. A total of 5 algorithms were tested during the experiment, including:
+- **Support Vector Machine**
 - **Gradient Boosting**
-- **Support Vector Regressor (SVR)**
-- **Bayesian Ridge**
-- **CatBoost Regressor**
-- **LightGBM Regressor**
-- **Extra Trees Regressor**
+- **Decision Tree**
+- **Random Forest**
+- **Logistic Regression**
 
 <br> 
-In addition to experimenting with various algorithms, we also conducted multiple experiments on scaling, feature selection, and hyperparameter tuning using GridSearch for the algorithm with the best evaluation results.
 
-**Scaling:** We compared two scaling methods, StandardScaler and RobustScaler.
-Results: StandardScaler produced a smaller MAE compared to RobustScaler.
-
-**Feature Selection:** We conducted experiments using feature elimination, testing several feature selection techniques-:
-- Mutual Information Regression
-- Correlation Analysis
-- Feature Importance
-- Particle Swarm Optimization (PSO)
-Results: The Feature Importance technique yielded the lowest MAE and more balanced scores between the training and testing data.
-
-**Tuning:** Hyperparameter tuning was performed only on the 3 best algorithms (those with the lowest MAE).
+**Tuning:** Hyperparameter tuning was performed only on the 1 best algorithms (those with the lowest MAE).
 
 ## 2. **Model Training and Evaluation**: 🏋️‍♀️🎯<br>
-Model evaluation was performed using the MAE (Mean Absolute Error) metric, which was chosen for its robustness to outliers and its ability to provide a representative evaluation without disproportionately weighting large errors. A smaller MAE value indicates better model prediction accuracy.
 
-From the evaluation results, the CatBoost model, **utilizing two features—'DistancePerStep' (total distance divided by total steps) and 'Total_MET'** (total daily energy calculated based on activity intensity)—produced the best prediction results with the lowest MAE compared to other models.
-
-The following are the prediction results with the highest MAE:
+The following are the prediction results with the highest Accurcy and ROC-AUC:
 
 ### Model Results
-| Model Name | MAE Train | MAE Test | MAE Dofferent |
-|------------|--------------|-------------|-----------|
-| CatBoost | 104.84 | 184.07 | 79.23 |
-| LightGBM | 148.94 | 212.87 | 63.93 |
-| Gradien Boosting | 146.01 | 204.92 | 58.91 |
+| Model Name | Accuracy | ROC AUC | 
+|------------|--------------|-------------|
+| Support Vector Machine | 0.67 | 0.50 | 
+| Gradient Boosting | 0.94 | 0.94 | 
+| Decision Tree | 0.93 | 0.93 | 
+| Random Forest | 0.89 | 0.85 | 
+| Logistic Regression | 0.70 | 0.57 | 
 
 
-We discovered that the catBoost Model with the lowest MAE test (184.07) and train (104.84), stability compared to other models. 
+
+
+We discovered that the Gradient Boosting Model with the highest Accuracy (0.94) and ROC AUC (0.94), stability compared to other models. 
 
 ## 3. **Model Selection**: 🥇<br>
 
 ### Model Results
-| Model Name |MAE Train | MAE Test | MAE Different |
-|------------|--------------|-------------|-----------|
-| CatBoost | **104.84** | **184.07** | **79.23** |
+| Model Name | Accuracy | ROC AUC | 
+|------------|--------------|-------------|
+| Gradient Boosting | **0.94** | **0.94** |
 
 ![image](https://github.com/user-attachments/assets/d23a70d6-6545-43a4-b316-5a9fd1779498)
 
