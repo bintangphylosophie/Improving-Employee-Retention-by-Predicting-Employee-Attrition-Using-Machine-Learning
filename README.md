@@ -1,4 +1,4 @@
-# Improving-Employee-Retention-by-Predicting-Employee-Attrition-Using-Machine-Learning
+# Improving Employee Retention by Predicting Employee Attrition Using Machine Learning
 # 
 ![Image](https://github.com/user-attachments/assets/84f95ee2-7d0f-4aa8-99c8-59c9968c64fd)
 The dataset contains employee attrition information from  a fictional company from 2006 to 2020.
@@ -55,8 +55,6 @@ Develop Predictive Models: Create data-driven models to forecast resignations an
 ![image](https://github.com/user-attachments/assets/b8f05681-be16-4035-995f-1e06e7aadec7)
 
 
-## 🧩 Business Metrics 
-Churn rate are the business metrics that we utilize as primary metrics.
 <br>
 <br>
 
