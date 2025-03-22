@@ -165,7 +165,27 @@ I create the column StatusKerja to serve as our label by defining 'Tidak Bekerja
 <img src="https://media0.giphy.com/media/Y4PkFXkfTeEKqGBBsC/giphy.gif?cid=ecf05e47numetagrmbl2rxf6x0lpcjgq1s340dfdh1oi0x9w&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="420">
 </p>
 
-This is the third stage of the project, focusing on the modelling of the  dataset. The main goal of this stage is to build and evaluate models that can predict the target variable based on the preprocessed data. 🎯
+This is the next of the project, focusing on gaining insight 
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/8a3562f1-4f19-489a-a2cf-c6d5ec13162d" width="300"></td>
+    <td><img src="https://github.com/user-attachments/assets/e2592858-5f2c-44c4-a7f7-616c98959fbc" width="300"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/c670b3e3-3530-4e59-8767-da16c0d851ab" width="300"></td>
+    <td><img src="https://github.com/user-attachments/assets/ba8274cd-a33e-45fc-b108-b3a93962ca26" width="300"></td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+the modelling of the  dataset. The main goal of this stage is to build and evaluate models that can predict the target variable based on the preprocessed data. 🎯
 
 The `Modelling_Merged.ipynb` notebook contains the modelling steps, where we build, train, and evaluate various machine learning models. This stage is crucial for finding the best model that can accurately predict the target variable. 📊
 
