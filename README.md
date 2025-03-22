@@ -204,7 +204,8 @@ Prior to this, the dataset was split into training and testing sets. After compl
 <br>
 
 
-# 🚀 Stage 3: Modelling
+# 🚀 Stage 5
+: Modelling
 <br>
 <p align="center">
 <img src="https://media0.giphy.com/media/Y4PkFXkfTeEKqGBBsC/giphy.gif?cid=ecf05e47numetagrmbl2rxf6x0lpcjgq1s340dfdh1oi0x9w&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="420">
@@ -321,7 +322,7 @@ To improve retention, the company deploys a machine learning model to identify k
 - **Personalized Exit Interviews:** Focus on  mid-employee and Jakarta Selatan employees to understand their concerns, "Stay Interviews": Monthly check-ins with at-risk employees
 - **Internal Mentorship Programs:** Pair mid-level employees with senior mentors.
 
-## Machine learning provided valuable insights, but human intervention was key in designing effective retention strategies. XYZ Corp launches AI-powered retention programs for 6 months and tracks the impact.
+#### Machine learning provided valuable insights, but human intervention was key in designing effective retention strategies. XYZ Corp launches AI-powered retention programs for 6 months and tracks the impact.
 
 ## 📝 Business Impact Simulation  
 Company Name Profile: **XYZ Corp**
@@ -334,11 +335,9 @@ A tech company, XYZ Corp, has been struggling with high employee turnover, affec
 
 ## Acknowledgements🌟
 
-We would like to express our deepest appreciation to Rakamin Academy for providing the opportunity to work on this exciting project. The experience and knowledge we gained throughout this journey have been invaluable.
+I would like to express our deepest appreciation to Rakamin Academy for providing the opportunity to work on this exciting project. The experience and knowledge we gained throughout this journey have been invaluable.
 
-Special thanks to our mentor, Mr. Dino Febrianto, for his continuous guidance, patience, and support. His insights and wisdom have been instrumental in the successful completion of this project.
-
-Finally, we would like to thank everyone who was involved in this project and those who provided their support and encouragement throughout our journey.
+Finally, I would like to thank those who provided their support and encouragement throughout my journey.
 
 Regards, Bintang Phylosophie
 
