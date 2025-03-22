@@ -1,5 +1,5 @@
 # Improving Employee Retention by Predicting Employee Attrition Using Machine Learning
-# 
+
 <br>
 <p align="center">
 <img src="https://github.com/user-attachments/assets/84f95ee2-7d0f-4aa8-99c8-59c9968c64fd" width="500">
@@ -122,15 +122,6 @@ The process will go through the following steps to achieve the objectives:
 
 
 
-
-<br>
-<br>
-
-Several significant variables have yielded insights into the attributes of candidates who tend to depart after training and those who continue to be employed by the organization after training. These variables include the candidate's location, status as an employee with relevant data science experience, educational attainment, and work experience.
-<br>
-<br>
-
-
 # ⚙️ Stage 2: Feature Engineering
 
 <br>
@@ -139,61 +130,35 @@ Several significant variables have yielded insights into the attributes of candi
 </p>
 
 
-This is the second stage of  focusing on data preprocessing of the dataset. The main goal of this stage is to clean and transform the raw data to make it suitable for data analysis and modeling. 🧹🔄
+This is the second stage of  focusing on feature engineering of the dataset. The main goal of this stage is to clean and transform the raw data to make it suitable for data analysis. 🧹🔄
 
-The `Preprocessing_merged.ipynb` notebook contains the preprocessing steps, where we handle missing values, outliers, and categorical variables. This stage is crucial for improving the quality of the data and ensuring that the dataset is a correct and useful representation of the problem to be modeled. 📊
 
 ---
 <br>
 
 **Key steps in this stage include:**
+## 1. Creating Column Target SatatusKerja
+I create the column StatusKerja to serve as our label by defining 'Tidak Bekerja' for rows with a non-null value in `TanggalResign` (indicating resignation) and 'Masih Bekerja' for rows with a null value in `TanggalResign` (indicating active employment). And the other things are adjusting datatype and some feature extraction.
 
-## 1. **Missing Values Handling** 🕵️‍♀️<br>
-The imputation method is used to populate the 0.64% missing values in 'Total_METs' and 'Avg_MERTs' feature.
+## 2. Column: Hiring
+- Tanggal hiring
+- Tanggal resign
+- Tahun hiring
+- Bulan hiring
+- Hari hiring
+## 3. Column: UmurKaryawan
+- Usia karyawan
+- Kategori usia
+## 4. Column: DurasiBekerja
+- Tanggal penilaian karyawan
+- Tanggal hiring
+- Lama menjabat
 
-## 2. **Feature Extraction** 🔄<br>
-In order to enhance the future performance of the machine learning model, we extracted some feature from existed features
- ### a. extract name of the day
- ### b. extract new feature
- - 'DistancePerStep'
- - 'ActiveRatio'
- - 'TotalUsageMinutes'
- - 'VeryActiveMinutesRatio'
- - 'FairlyActiveMinutesRatio'
- - 'LightlyActiveMinutesRatio'
- - 'SedentaryMinutesRatio'
- - 'TotalDistance'
- - 'TotalActiveMinutes'
- - 'ActiveRatio'
- - 'AverageActiveMinutes'
- - 'AveragePace'
- - 'InactiveRatio'.
- ### c. Clustering
- - No clear distribution pattern was found in the boxplot. So we will try another method: Check cluster using heatmap.
-![image](https://github.com/user-attachments/assets/a98314e8-dc31-4c50-ac63-c268aa999726)
-On the heatmap, the pattern is clearly visible in 'TotalSteps' and 'Total_MET'. Therefore, it will be sorted based on these results. The result will be put into the 'ActivityRank' variable.
-Since the clusters can be sorted, we will use the 'ActivityRank' column instead of 'Clusters'. This approach allows the machine learning model to capture the sequential patterns present in the data. However, a double-check will be performed during feature selection to ensure whether 'ActivityRank' or 'Clusters' yields a higher score. It is show that 'ActivityRank' is more usefull than 'Clusters', so we dropped 'Cluster' as well
-
-## 3. **Feature Selection** 🎯<br>
-Using SelectKBest test method from sklearn.feature_selection, It selects the top k features from a dataset based on statistical tests or scoring functions. This method is commonly used to reduce dimensionality by keeping only the most relevant features for predictive modeling. Using mutual info regression, we only keep those that have mutual information score above 0.1.
-
-## 4. **Feature Encoding** 🏷️<br>
-We encode all of our categorical features (strings) using the label encoding method. All features have been encoded at the feature extraction stage, given that our features are ordinal data and the majority of machine learning algorithms perform better with numerical data.
-
-## 5. **Feature Transformation** 🔧<br>
-Feature transformation is performed using StandardScaler because it is more robust to outliers and suitable for regression models.
-
-## 6. **Handle Imbalance Data** ⚖️<br>
-There is no class imbalance since we are working with a regression machine learning model..
-<br>
-<br>
-<br>
-## Prior to this, the dataset was split into training and testing sets. After completing all preprocessing steps, the data is clean and ready for machine learning to predict the target.🤖
 
 <br>
 <br>
 
-# 🚀 Stage 3: Modelling
+# 🚀 Stage 3: Insight
 
 <br>
 <p align="center">
