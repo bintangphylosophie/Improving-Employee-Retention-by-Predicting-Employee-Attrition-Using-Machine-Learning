@@ -135,7 +135,7 @@ This is the second stage of  focusing on feature engineering of the dataset. The
 <br>
 
 **Key steps in this stage include:**
-## 1. Creating Column Target SatatusKerja
+## 1. Creating Column Target: SatatusKerja
 I create the column StatusKerja to serve as our label by defining 'Tidak Bekerja' for rows with a non-null value in `TanggalResign` (indicating resignation) and 'Masih Bekerja' for rows with a null value in `TanggalResign` (indicating active employment). And the other things are adjusting datatype and some feature extraction.
 
 ## 2. Column: Hiring
