@@ -1,6 +1,10 @@
 # Improving Employee Retention by Predicting Employee Attrition Using Machine Learning
 # 
-![Image](https://github.com/user-attachments/assets/84f95ee2-7d0f-4aa8-99c8-59c9968c64fd)
+<br>
+<p align="center">
+<img src="https://github.com/user-attachments/assets/84f95ee2-7d0f-4aa8-99c8-59c9968c64fd" width="500">
+</p>
+<br>
 The dataset contains employee attrition information from  a fictional company from 2006 to 2020.
 
 ## 📚 Installation
@@ -112,25 +116,9 @@ The process will go through the following steps to achieve the objectives:
 | TanggalHiring | Date of hiring |
 | TanggalPenilaianKaryawan | Date of employee evaluation |
 | TanggalResign | Date of resignation for resigned employees |
-|---------|-------------|
+
 <br>
 <br>
-
-![image](https://github.com/user-attachments/assets/c0826b07-708c-41bd-b46f-103e675bf1c7)
-
-![image](https://github.com/user-attachments/assets/f90be20f-42ea-4251-9a8b-e50f80a8f171)
-
-![image](https://github.com/user-attachments/assets/2795dd19-95e4-4ba1-9859-3349f3d1accc)
-
-![image](https://github.com/user-attachments/assets/c81fdefd-aeaa-429e-8e8d-3761b5b055f5)
-
-![image](https://github.com/user-attachments/assets/89230a7a-65d0-41a3-ac73-5ac8b6290655)
-
-![image](https://github.com/user-attachments/assets/763b2acb-7ee6-4d74-adab-a01ecca3ca6b)
-
-![image](https://github.com/user-attachments/assets/5a6d22aa-90c1-4e0a-8e3f-812aa28fa6ca)
-
-![image](https://github.com/user-attachments/assets/85eaba29-925a-4f2f-a885-90326585653d)
 
 
 
@@ -138,12 +126,12 @@ The process will go through the following steps to achieve the objectives:
 <br>
 <br>
 
- Several significant variables have yielded insights into the attributes of candidates who tend to depart after training and those who continue to be employed by the organization after training. These variables include the candidate's location, status as an employee with relevant data science experience, educational attainment, and work experience.
+Several significant variables have yielded insights into the attributes of candidates who tend to depart after training and those who continue to be employed by the organization after training. These variables include the candidate's location, status as an employee with relevant data science experience, educational attainment, and work experience.
 <br>
 <br>
 
 
-# ⚙️ Stage 2: Data Preprocessing
+# ⚙️ Stage 2: Feature Engineering
 
 <br>
 <p align="center">
