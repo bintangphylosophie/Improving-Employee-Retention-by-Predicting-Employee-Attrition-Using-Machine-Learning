@@ -52,52 +52,65 @@ Analyze Employee Data: Examine historical trends, employee attributes, and resig
 Generate Actionable Insights: Identify factors influencing retention and recommend strategies for improvement.
 Develop Predictive Models: Create data-driven models to forecast resignations and help the company address employee concerns proactively.
 
-![image](https://github.com/user-attachments/assets/b8f05681-be16-4035-995f-1e06e7aadec7)
 
-
+The process will go through the following steps to achieve the objectives:
+1. Data Understanding
+2. Data Preprocessing
+3. Feature Engineering
+4. Insight
+5. Exploratory Data Analysis
+6. Data Preparation
+7. Machine Learning
 <br>
 <br>
 
-# 🔎Stage 1: Exploratory Data Analysis (EDA)
+# 🔎Stage 1: Data Understanding and Preprocessing 
 
 <br>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/74038190/212749726-d36b8253-74bb-4509-870d-e29ed3b8ff4a.gif" width="500">
 </p>
-
-
-This is the first stage of this project, focusing on exploratory data analysis (EDA) of the FitBit dataset. The main goal of this stage is to understand the data, find patterns, spot anomalies, test hypotheses, and check assumptions with the help of summary statistics and graphical representations.
-
-The `All EDA and Insight.ipynb` notebook contains the initial data exploration, where we examine the basic metrics, distributions, and relationships between variables. This stage is crucial for familiarizing ourselves with the data and gaining insights that will help us decide how to handle preprocessing and modeling in the next stages.
 <br>
-
 ## 📊 About Dataset 
 ### 📋Dataset consist :
-- 940 rows and 14 columns from 32 user in dailyActivity_merged.csv dataset and minuteMETsNarrow_merged.csv dataset merged
-- The target column in this dataset is "Calories"
-- Dataset does not contain missing values
-- The dataset have 1 duplicate values
+- There are 287 rows and 25 columns in the dataset. 
+- The target column in this dataset is `StatusKerja` has extracted from `TanggalResign`
+- The dataset contains several missing values, which are filled considering the number of missing values, their skewness, and the data type
+- The dataset does not have duplicated data
+- The dataset does not have outliers
+- Several inconsistent data values have been tidied up.
+
 
 ### 📝Features
 
 | Feature | Explanation |
 |---------|-------------|
-| Id| user inique ID|
-| TotalSteps| daily total number of steps took|
-| TotalDistance| daily total number of distance taken (in kilometers) |
-| TrackerDistance | distance tracked by the device |
-| LoggedActivity | logged distance from manually tracked activities |
-| VeryActiveDistance | distance taken during very active physical activity |
-| ModeratelyActiveDistance | distance taken during moderate activity |
-| LightActiveDistance | distance taken during light activity |
-| SedentaryActiveDistance | distance taken during sedentary activity |
-| VeryActiveMinutes | number of minutes spent on highly active activities |
-| FairlyActiveMinutes | number of minutes spent on fairly active activities |
-| SedentaryactiveMinutes | number of minutes spent on sedentary active activities |
-| Calories | the number of calories burned by user |
-| AvgMET | daily average Metabolic Equivalents |
-| TotalMET | total daily Metabolic Equivalents |
-
+| Username| Unique employee username|
+| EnterpriseID| ID within the enterprisek|
+| StatusPernikahan| Marital status |
+| JenisKelamin | Gender|
+| StatusKepegawaian | Employment status |
+| Pekerjaan |  Job position |
+| JenjangKarir | Career level |
+| PerformancePegawai | PerformancePegawai |
+| AsalDaerah | Region of origin |
+| HiringPlatform | Platform used for hiring |
+| SkorSurveyEngagement | Engagement score |
+| SkorKepuasanPegawai | Employee satisfaction score |
+| JumlahKeikutsertaanProjek | Number of projects participated in |
+| JumlahKeterlambatanSebulanTerakhir | Recent monthly delay count |
+| JumlahKetidakhadiran | Absence count |
+| NomorHP | Employee's phone number |
+| Email | Employee's email address |
+| TingkatPendidikan | Educational level |
+| PernahBekerja | Previous employment history |
+| IkutProgramLOP | Participation in a specific program (LOP) |
+| AlasanResign | Reason for resignation (if applicable) |
+| TanggalLahir | Date of birth |
+| TanggalHiring | Date of hiring |
+| TanggalPenilaianKaryawan | Date of employee evaluation |
+| TanggalResign | Date of resignation for resigned employees |
+|---------|-------------|
 <br>
 <br>
 
