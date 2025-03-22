@@ -71,7 +71,9 @@ The process will go through the following steps to achieve the objectives:
 <img src="https://user-images.githubusercontent.com/74038190/212749726-d36b8253-74bb-4509-870d-e29ed3b8ff4a.gif" width="500">
 </p>
 <br>
+
 ## 📊 About Dataset 
+
 ### 📋Dataset consist :
 - There are 287 rows and 25 columns in the dataset. 
 - The target column in this dataset is `StatusKerja` has extracted from `TanggalResign`
