@@ -132,8 +132,6 @@ The process will go through the following steps to achieve the objectives:
 
 This is the second stage of  focusing on feature engineering of the dataset. The main goal of this stage is to clean and transform the raw data to make it suitable for data analysis. 🧹🔄
 
-
----
 <br>
 
 **Key steps in this stage include:**
@@ -164,20 +162,24 @@ I create the column StatusKerja to serve as our label by defining 'Tidak Bekerja
 <img src="https://media0.giphy.com/media/Y4PkFXkfTeEKqGBBsC/giphy.gif?cid=ecf05e47numetagrmbl2rxf6x0lpcjgq1s340dfdh1oi0x9w&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="420">
 </p>
 
-This is the next phase of the project, focusing on gaining insights. Here are some valuable insights derived from the dataset<table>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/8a3562f1-4f19-489a-a2cf-c6d5ec13162d" width="300"></td>
-    <td><img src="https://github.com/user-attachments/assets/e2592858-5f2c-44c4-a7f7-616c98959fbc" width="300"></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/c670b3e3-3530-4e59-8767-da16c0d851ab" width="300"></td>
-    <td><img src="https://github.com/user-attachments/assets/ba8274cd-a33e-45fc-b108-b3a93962ca26" width="300"></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/a3d3fdd9-be1d-4442-affd-38f5baa5e7d5" width="300"></td>
-    <td><img src="https://github.com/user-attachments/assets/a95ba87f-b09d-4556-b8d2-3e65f8364202" width="300"></td>
-  </tr>
-</table>
+This is the next phase of the project, focusing on gaining insights. Here are some valuable insights derived from the dataset
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/8a3562f1-4f19-489a-a2cf-c6d5ec13162d" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/e2592858-5f2c-44c4-a7f7-616c98959fbc" width="300"></td>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/c670b3e3-3530-4e59-8767-da16c0d851ab" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/ba8274cd-a33e-45fc-b108-b3a93962ca26" width="300"></td>
+    </tr>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/a3d3fdd9-be1d-4442-affd-38f5baa5e7d5" width="300"></td>
+      <td><img src="https://github.com/user-attachments/assets/a95ba87f-b09d-4556-b8d2-3e65f8364202" width="300"></td>
+    </tr>
+  </table>
+</div>
+
 
 
 # ⚙️ Stage 4: Data Preprocessing
@@ -196,8 +198,7 @@ Data splitting is the process of dividing a dataset into different subsets to tr
 The main goal of this stage is to build and evaluate models that can predict the target variable based on the preprocessed data. The data splitted into 20% train and 80% test.
 
 
-## Prior to this, the dataset was split into training and testing sets. After completing all preprocessing steps, the data is clean and ready for machine learning to predict the target.🤖
-The `Modelling_Merged.ipynb` notebook contains the modelling steps, where we build, train, and evaluate various machine learning models. This stage is crucial for finding the best model that can accurately predict the target variable. 📊
+Prior to this, the dataset was split into training and testing sets. After completing all preprocessing steps, the data is clean and ready for machine learning to predict the target.🤖
 
 <br>
 <br>
@@ -269,8 +270,6 @@ The following are the prediction results with the highest Accurcy and ROC-AUC:
 | Logistic Regression | 0.70 | 0.57 | 
 
 
-
-
 We discovered that the Gradient Boosting Model with the highest Accuracy (0.94) and ROC AUC (0.94), stability compared to other models. 
 
 ## 3. **Model Selection**: 🥇<br>
@@ -280,52 +279,57 @@ We discovered that the Gradient Boosting Model with the highest Accuracy (0.94) 
 |------------|--------------|-------------|
 | Gradient Boosting | **0.94** | **0.94** |
 
-![image](https://github.com/user-attachments/assets/d23a70d6-6545-43a4-b316-5a9fd1779498)
+with confussion matrich and ROC AUC score like this:
 
-
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="https://github.com/user-attachments/assets/259784b2-2b39-4912-b555-26b4d56dfdeb" width="400"></td>
+      <td><img src="https://github.com/user-attachments/assets/ffb76db3-751f-4ef9-b82a-56c05b3ec943" width="400"></td>
+    </tr>
+  </table>
+</div>
 
 ## 🔑 Feature Importance 
-Based on the CatBoost model Feature Importance:
+Based on the Gradient Boosting model Feature Importance:
 
-![image](https://github.com/user-attachments/assets/569ee123-df91-48a0-a82b-5ab95f879428)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/200d233e-1cdc-403e-bb6a-8887b523f375" width="400">
+</div>
 
 <br>
 
-The importance feature are :
-- 'DistancePerStep'
-- 'Total_MET'
-
-## 📝 Business Impact Simulation  
-![Laporan Final Project - F4 pptx](https://github.com/user-attachments/assets/44b5eeae-29d7-40db-ae5c-5a9fc6d8e0dc)
-
-
-**Explanation:** <br>
-In this analysis, we simulate and assume that in month X, there will be 1,000 new users. Reviewing the previous data, we observe a decrease in active users to 62% of the total users, meaning that by month X+5, **before model only 380 active users remain** using the gadgets and applications.
-
-According to Varecol, personalization in health applications can increase user participation by up to 30% of total users in the long term. With the implementation of personalization features and a **30% increase** in active users, the number of **active users in month X+5 after model is projected to reach 680.**
-
-However, these results will need to be validated with new data after the machine learning model is deployed.
+The top importance feature with score > 0.01 are :
+- `AlasanResign`
+- `AsalDaerah_JakartaSelatan`
+- `UsiaKaryawan`
+- `HiringPlatform_Diversity_Jobfair`
 
 
 ## ✅ Business Recommendation
-### Feature Personalized ♥️
-- **Personalized Daily/Weekly Calorie Targets**
-To increase user flexibility in achieving daily/weekly calorie targets and increase user motivation in achieving goals. In accordance with goal-setting theory (Locke and Latham, 1990, 2022)
-- **Deploy Model**
-Deploy the best machine learning results, CatBoost with the 2 best features, in the cloud or on devices if possible.
-If the predicted calorie burning results are still less than the daily target, the application will provide recommendations for activity adjustments to meet the weekly calorie burning target.
+To improve retention, the company deploys a machine learning model to identify key factors leading to resignations. with AI-driven insights, the company designs targeted retention strategies:
 
-### Gamification 🎮 
-- **Feature Challenge**
-Gamification can be made into a challenge feature to motivate users to be more active in burning calories. 'Daily Challenge' such as the '10,000 Steps Challenge', and 'Leaderboard' to motivate users, because the majority are still classified as sedentary.
+### The model strongly relies on "AlasanResign" (Resignation Reason), meaning that resignation trends must be analyzed deeply to take proactive action. Since working hour is the dominant factor, some action recommend:
+- **Analyze Overtime Trends:** Check which departments consistently work overtime and why.
+- **Survey Employees:** Get feedback on workload, stress levels, and preferred work hours.
+- **Compare Productivity Metrics:** Measure performance vs. hours worked to find the optimal balance.
+- **Implement Flexible Working Hours:** Allow employees to choose a start time (e.g., 7 AM - 3 PM, 9 AM - 5 PM, 11 AM - 7 PM)
+- **Implement Hybrid & Remote Work Options:** Allow employees to work 2-3 days from home per week.
+- **Reduce Unnecessary Meetings & Improve Time Efficiency:** Limit Meetings to 30-45 Minutes, Set "No-Meeting Days“,Block 1-2 days per week for deep work without interruptions.
 
-- **Feature Streak**
-Then, the streak feature encourages users to stay active by providing rewards for each daily log or daily calorie target achievement.. This aims to maintain user retention and reduce boredom in using the application.
+### The model detects that employees from Jakarta Selatan and mid-employees have a higher risk of resigning. 
+- **Personalized Exit Interviews:** Focus on  mid-employee and Jakarta Selatan employees to understand their concerns, "Stay Interviews": Monthly check-ins with at-risk employees
+- **Internal Mentorship Programs:** Pair mid-level employees with senior mentors.
 
-### Motivational Notification 🔔
-- **Notification/Reminder**
+## Machine learning provided valuable insights, but human intervention was key in designing effective retention strategies. XYZ Corp launches AI-powered retention programs for 6 months and tracks the impact.
 
-We recommend the develover to create notification features to encourage users to use Fitbit more often and remind them of the best times to exercise, such as 7 am to 7 pm.
+## 📝 Business Impact Simulation  
+Company Name Profile: **XYZ Corp**
+A tech company, XYZ Corp, has been struggling with high employee turnover, affecting productivity, morale, and recruitment costs. To improve retention, the company deploys a machine learning model to identify key factors leading to resignations. with AI-driven insights, the company designs targeted retention strategies.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/78c8ecef-dbf8-444e-9c8c-4906da6ebf09" width="600">
+</div>
 
 
 ## Acknowledgements🌟
@@ -343,4 +347,4 @@ Regards, Bintang Phylosophie
 <img src="https://media1.giphy.com/media/3ohs7JG6cq7EWesFcQ/giphy.gif?cid=ecf05e47v1a2kre6ziee4vjvkc67vxhrwh8ho4089wc0aqli&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="800">
 </p>
 
-🎓 This Final Project is a Rakamin Academy's program.
+
