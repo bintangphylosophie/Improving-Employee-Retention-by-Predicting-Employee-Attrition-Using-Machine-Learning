@@ -248,7 +248,7 @@ I experimented with other algorithms. A total of 5 algorithms were tested during
 
 <br> 
 
-**Tuning:** Hyperparameter tuning was performed only on the 1 best algorithms (those with the lowest MAE).
+**Tuning:** Hyperparameter tuning was performed only on the 1 best algorithms (those with the highestROC AUC).
 
 ## 2. **Model Training and Evaluation**: 🏋️‍♀️🎯<br>
 
