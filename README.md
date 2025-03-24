@@ -32,10 +32,7 @@ pip install jupyter
 
 Once you have Python and the necessary libraries, you can run the project using Jupyter Notebook:
 ```bash
-jupyter notebook All EDA and Insight.ipynb
-jupyter notebook Preprocessing_merged.ipynb
-jupyter notebook Modelling_Merged.ipynb
-
+jupyter notebook Improving Employee Retention by Predicting Employee Attrition Using Machine Learning.ipynb
 ```
 ## Project Overview
 Human resource (HR) is the key asset that needs effective management to helpcompanies achieve their business goals. In this project, we are faced with an issue related to human resources within a company. Our focus is to understand how retain employees to prevent the swelling of recrutmnt and training costs for new hires. By identifying factors causing employees to leave, we can promply address these concerns by creating relevant employee programs.
