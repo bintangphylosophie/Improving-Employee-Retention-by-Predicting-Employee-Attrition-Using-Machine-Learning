@@ -173,6 +173,9 @@ This is the next phase of the project, focusing on gaining insights. Here are so
     </tr>
   </table>
 </div>
+For further and deeper analysis and explanation, kindly check:
+
+[Improving Employee Retention (PDF)](https://github.com/bintangphylosophie/Improving-Employee-Retention-by-Predicting-Employee-Attrition-Using-Machine-Learning/blob/main/Improving%20Employee%20Retention%20by%20Predicting%20Employee%20Attrition%20Using%20Machine%20Learning.pdf)
 
 
 
