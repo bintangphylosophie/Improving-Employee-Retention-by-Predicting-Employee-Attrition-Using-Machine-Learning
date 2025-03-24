@@ -40,9 +40,6 @@ Human resource (HR) is the key asset that needs effective management to helpcomp
 ## Problem
 Employee attrition threatens organizational stability, productivity, and long-term growth. Data indicates a sharp rise in resignations, particularly in 2018, alongside a declining trend in new hires. This imbalance underscores the need for proactive retention strategies to mitigate turnover.
 
-Despite its high popularity, Fitbit faces challenges, particularly a lack of long-term user engagement. Data shows that 62% of users stop using it after 6-12 months, with the main reasons being boredom and the lack of personalized and relevant insights 
-source: Statista(2023), Gartner(2022)
-
 ## 🎯 Goals 
 - Enhance Employee Retention: Strengthen strategies to retain employees and reduce turnover.
 - Leverage Data for Decision-Making: Use historical employee data to gain insights into attrition trends.
