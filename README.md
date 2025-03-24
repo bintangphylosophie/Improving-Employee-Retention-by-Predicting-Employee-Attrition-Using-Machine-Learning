@@ -231,7 +231,7 @@ pip install jupyter
 
 Once you have Python and the necessary libraries, you can run the project using Jupyter Notebook:
 ```bash
-jupyter notebook Modelling_Merged.ipynb
+jupyter notebook Improving Employee Retention by Predicting Employee Attrition Using Machine Learning.ipynb
 ```
 
 
@@ -248,7 +248,7 @@ I experimented with other algorithms. A total of 5 algorithms were tested during
 
 <br> 
 
-**Tuning:** Hyperparameter tuning was performed only on the 1 best algorithms (those with the highestROC AUC).
+**Tuning:** Hyperparameter tuning was performed only on the 1 best algorithms (those with the highest ROC AUC score).
 
 ## 2. **Model Training and Evaluation**: 🏋️‍♀️🎯<br>
 
