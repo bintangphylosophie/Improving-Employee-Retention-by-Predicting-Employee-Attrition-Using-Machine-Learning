@@ -179,13 +179,13 @@ This is the next phase of the project, focusing on gaining insights. Here are so
 # ⚙️ Stage 4: Data Preprocessing
 This stage is focusing on data preprocessing of the dataset transform the data to make it suitable for modeling
 ## 1. **Feature Encoding** 🏷️<br>
-We encode all of our categorical features (strings) using the label encoding method. All features have been encoded at the feature extraction stage, given that our features are ordinal data and the majority of machine learning algorithms perform better with numerical data.
+I encode all of our categorical features (strings) using the label encoding method. All features have been encoded at the feature extraction stage, given that our features are ordinal data and the majority of machine learning algorithms perform better with numerical data.
 
 ## 2. **Data Scaling** 🏷️<br>
-Data scaling is the process of transforming feature values within a dataset to ensure they have a uniform range. We performed using StandardScaler to improve machine learning algorithm performance that will be perform in next stage.
+Data scaling is the process of transforming feature values within a dataset to ensure they have a uniform range. I performed using MinMaxScaler to improve machine learning algorithm performance that will be perform in next stage.
 
 ## 3. **Feature Selection** 🎯<br>
-Since we are working with categorical features and a classification problem, SelectKBest with chi2 is a great choice because it is: fast, helps remove irrelevant features, works well with encoded categorical data. This method is commonly used to reduce dimensionality by keeping only the most relevant features for predictive modeling. We only keep top 15 features.
+Since I am working with categorical features and a classification problem, SelectKBest with chi2 is a great choice because it is: fast, helps remove irrelevant features, works well with encoded categorical data. This method is commonly used to reduce dimensionality by keeping only the most relevant features for predictive modeling. I only keep top 15 features.
 
 ## 4. **Data Splitting**<br>
 Data splitting is the process of dividing a dataset into different subsets to train, validate, and test a machine learning model. 
@@ -198,8 +198,7 @@ Prior to this, the dataset was split into training and testing sets. After compl
 <br>
 
 
-# 🚀 Stage 5
-: Modelling
+# 🚀 Stage 5: Modelling
 <br>
 <p align="center">
 <img src="https://media0.giphy.com/media/Y4PkFXkfTeEKqGBBsC/giphy.gif?cid=ecf05e47numetagrmbl2rxf6x0lpcjgq1s340dfdh1oi0x9w&ep=v1_gifs_related&rid=giphy.gif&ct=g" width="420">
